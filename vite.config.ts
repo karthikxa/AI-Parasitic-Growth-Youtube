@@ -13,8 +13,7 @@ export default defineConfig(({mode}) => {
     },
     resolve: {
       alias: {
-        // CORRECT - points to root where your files actually are
-'@': path.resolve(__dirname, '.'),
+        '@': path.resolve(__dirname, '.'),  // ← only change this line
       },
     },
     server: {
